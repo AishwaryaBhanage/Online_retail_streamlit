@@ -11,7 +11,15 @@ st.subheader("Create your own shopping list without any miss...")
 items_set = "Notebooks/datasets/Items_sets.csv"
 data = pd.read_csv(items_set)
 
-st.dataframe(data)
+#unique items list
+products_data  = "Notebooks/datasets/products.csv"
+products = pd.read_csv(products_data)
 
+#drop down for select product
+selected_option = st.selectbox("Select product to view recommendations:",products)
+st.write("You selected: ", selected_option)
+
+print(selected_option)
 #plot a bar chart
-st.pyplot()
+
+
