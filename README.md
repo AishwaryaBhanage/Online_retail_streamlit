@@ -1,24 +1,58 @@
 ##  End to End Streamlit Application on Product recommendation using Apriori
 
-Dec 2021- May 2022
-![image](https://github.com/AishwaryaBhanage/Online_retail_streamlit/assets/130264838/efd40741-07f8-4237-bf31-163d06bff22a)
+Problem Statement:
+            Many consumers struggle with creating an efficient and comprehensive shopping list, often resulting in missed 
+                items during the shopping process. The aim is to develop a solution that recommends top 5 frequently bought
+                items based on the selection of one item from a list, facilitating a more thorough and convenient shopping experience.
 
-The sales data reveals insights into various product categories, presented in a horizontal bar graph.
-Notably, the graph highlights 'Phones' and 'Chairs' as the top performers with the highest sales values.
-In contrast, the 'Table' category ranks fourth in terms of sales, while 'Supplies' represents the category with the least sales.
+Purpose:
+             To create a user-friendly application that utilizes the Apriori algorithm for product recommendation and cross-selling,
+                 ultimately assisting users in building a well-rounded shopping list.
 
-![image](https://github.com/AishwaryaBhanage/Online_retail_streamlit/assets/130264838/d71ab3ed-ca98-410a-81bd-5e228212ba7e)
+Goal:
+             Accepts a user's selection of a product from a list.
+             Applies the Apriori algorithm to recommend the top 5 frequently bought items associated with the selected product.
+             Provides the user with a selection mechanism among the recommended products.
+             Allows the user to add the chosen product to their shopping list.
 
-Intriguingly, despite the 'Table' category ranking fourth in sales, it incurs the most significant losses, marked in red.
-The sales figure for 'Table' stands at $55,618, but the profit plunges to -$17,725.
-Conversely, categories like 'Phones' and 'Chairs,' highlighted in green, not only lead in sales but also contribute to substantial profits
+Tools and Technologies:
+Python 3.10.10
+Jupyter Notebooks
+VS Code
+Streamlit for the application development
+Apriori algorithm for product recommendation and cross-selling
+Methodology:
+1. Data Exploration:
+Investigated the Online Retail data set to understand its structure and relevant features.
 
-![image](https://github.com/AishwaryaBhanage/Online_retail_streamlit/assets/130264838/a896524a-0847-4abd-81ef-dbb397a6df81)
+2. Algorithm Selection:
+Choose the Apriori algorithm for its effectiveness in mining frequent itemsets.
 
-In a noticeable trend, the profit values consistently dip into negative territory during the month of the order date.
-This downward trend is evident in the line graph, indicating a period of decreased profitability within that timeframe.
+3. Data Preprocessing:
+Cleaned and preprocessed the data for input into the algorithm.
 
-![image](https://github.com/AishwaryaBhanage/Online_retail_streamlit/assets/130264838/1b2104f2-c36a-4734-bfb8-583b26948de4)
+4. Application Development:
+Used VS Code to create a Streamlit application that interacts with the Apriori algorithm.
 
-Upon a comprehensive comparison of various states and cities in the US, it's evident that Seattle emerges as the best-performing location for the 'Table' category in terms of profit.
-The data underscores Seattle's notable success in generating positive returns for this particular product category.
+          Results:
+          Screenshot 1: Landing page displaying the list of available products.                    
+  ![image](https://aishwaryabhanage.github.io/images/overall_recommendationapp.PNG)
+              
+              
+          Screenshot 2: User selects a product of interest.
+  ![image](https://aishwaryabhanage.github.io/images/product_selection.PNG)
+  
+          Screenshot 3: Top 5 recommended products based on the Apriori algorithm.
+  ![image](https://aishwaryabhanage.github.io/images/recommended_products.PNG)
+               
+          Screenshot 4: User selects a product from the recommendations.
+  ![image](https://aishwaryabhanage.github.io/images/additiontolist.PNG)
+               
+          Screenshot 5: The chosen product is added to the shopping list.
+  ![image](https://aishwaryabhanage.github.io/images/added_recommendationtolist.PNG)           
+     
+Conclusion:
+        The developed application successfully addresses the challenge of creating a comprehensive shopping list 
+        by employing the Apriori algorithm for effective product recommendations and cross-selling. Users can 
+        now enjoy a streamlined shopping experience, reducing the likelihood of forgetting essential items.
+     
